@@ -91,4 +91,20 @@ class SiteController extends Controller
     {
         return $this->render('about');
     }
+	public function actionFormitem()
+    {
+        return $this->render('formitem');
+    }
+	public function actionListitem()
+    {
+        return $this->render('listitem');
+    }
+	public function actionRevisiones()
+    {
+        return $this->render('revisiones');
+    }
+	public function actionFinalizar()
+    {
+        return $this->render('finalizar');
+    }
 }
