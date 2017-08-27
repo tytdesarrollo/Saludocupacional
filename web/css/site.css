@@ -2459,3 +2459,46 @@ MATERIAL-SELECT
 	list-style: none;
 	padding: 0;
 }
+
+
+
+
+/* ESTILOS SALUD OCUPACIONAL */
+
+.main-health .main-title{
+	text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.main-health .rev__title{
+	margin-top: 10px;
+}
+.main-health .panel .panel-body{
+	position: relative;
+}
+.rev__title small{
+	display: block;
+	margin-top: 5px;
+}
+.rev__content-btn-view-detail{
+	position: absolute;
+	right: 15px;
+	top: 50%;
+	margin-top: -20px;
+}
+.rev__content-btn-addrev{
+	position: absolute;
+    bottom: 30px;
+    left: 50%;
+    margin-left: -35px;
+}
+.rev__content-btn-addrev .btn-fab{
+	width: 70px;
+	height: 70px;
+}
+.rev__content-btn-addrev .btn-fab > i.material-icons{
+	font-size: 40px;
+    transform: translate(-20px, -20px);
+    width: 40px;
+    line-height: 40px;
+}

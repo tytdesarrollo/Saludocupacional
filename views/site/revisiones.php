@@ -10,14 +10,14 @@ use yii\helpers\Url;
 
 $this->title = 'Revisiones';
 ?>
-<div class="site-about">
-	<h2>Revisiones</h2>
+<div class="main-health">
+	<h2 class="main-title">Revisiones</h2>
 	<div class="panel panel-default">
 		<div class="panel-body">
 			<div class="pull-left">
-				<h3>Revisión Febrero<small>10/02/2017</small></h3>
+				<h3 class="rev__title">Revisión Febrero<small>10/02/2017</small></h3>
 			</div>
-			<div class="pull-right">
+			<div class="rev__content-btn-view-detail">
 				<button class="btn btn-info btn-fab btn-fab-mini">
 					<i class="material-icons">&#xE8F4;</i>
 				</button>
@@ -27,9 +27,9 @@ $this->title = 'Revisiones';
 	<div class="panel panel-default">
 		<div class="panel-body">
 			<div class="pull-left">
-				<h3>Revisión Marzo<small>08/03/2017</small></h3>
+				<h3 class="rev__title">Revisión Marzo<small>08/03/2017</small></h3>
 			</div>
-			<div class="pull-right">
+			<div class="rev__content-btn-view-detail">
 				<button class="btn btn-info btn-fab btn-fab-mini">
 					<i class="material-icons">&#xE8F4;</i>
 				</button>
@@ -39,16 +39,16 @@ $this->title = 'Revisiones';
 	<div class="panel panel-default">
 		<div class="panel-body">
 			<div class="pull-left">
-				<h3>Revisión Abríl<small>15/04/2017</small></h3>
+				<h3 class="rev__title">Revisión Abril<small>15/04/2017</small></h3>
 			</div>
-			<div class="pull-right">
+			<div class="rev__content-btn-view-detail">
 				<button class="btn btn-info btn-fab btn-fab-mini">
 					<i class="material-icons">&#xE8F4;</i>
 				</button>
 			</div>
 		</div>
 	</div>
-	<div class="content-btn-float">
+	<div class="rev__content-btn-addrev">
 		<button class="btn btn-success btn-fab" data-toggle="modal" data-target="#modalCrearRevision">
 			<i class="material-icons">&#xE145;</i>
 		</button>
@@ -62,11 +62,18 @@ $this->title = 'Revisiones';
         <h4 id="modalCrearRevisionLabel" class="modal-title">Crear una revisión</h4>
       </div>
       <div class="modal-body">
-        <p>Nombre de la revisión</p>
-		<p>Nombre Revisador</p>
-		<p>Firma</p>
-		<p>Nombre Aprobador</p>
-		<p>Firma</p>
+        <div class="form-group label-floating">
+			<label class="control-label" for="focusedInputNomRev">Nombre de la revisión</label>
+			<input class="form-control" id="focusedInputNomRev" type="text">
+		</div>
+		<div class="form-group label-floating">
+			<label class="control-label" for="focusedInputNomRevdor">Nombre del revisador</label>
+			<input class="form-control" id="focusedInputNomRevdor" type="text">
+		</div>
+		<div class="form-group label-floating">
+			<label class="control-label" for="focusedInputNomApdor">Nombre del Aprobador</label>
+			<input class="form-control" id="focusedInputNomApdor" type="text">
+		</div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
