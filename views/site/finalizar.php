@@ -19,6 +19,9 @@ $this->title = 'Finalizar';
 		</div>
 		<div class="form-group text-center">
 			<button class="btn btn-default btn-raised">
+				Exportar
+			</button>
+			<button onclick="window.location.href='<?php echo Url::toRoute(['site/listitem']); ?>'" class="btn btn-default btn-raised">
 				Guardar
 			</button>
 		</div>

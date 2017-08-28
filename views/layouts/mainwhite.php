@@ -21,7 +21,7 @@ AppAsset::register($this);
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
 </head>
-<body class="bg-heatlh">
+<body class="bg-white">
 <?php $this->beginBody() ?>
 
 <div class="wrap">
