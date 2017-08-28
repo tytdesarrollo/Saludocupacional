@@ -17,9 +17,11 @@ $this->title = 'Formulario Actividades';
 
     <!-- Nav tabs -->
   <ul class="nav nav-tabs" id="myTabs" role="tablist">
-    <li role="presentation" class="btn btn-info btn-fab" class="active"><a href="#pag1" aria-controls="home" role="tab" data-toggle="tab">1</a></li>
-    <li role="presentation" class="btn btn-info btn-fab"><a href="#pag2" aria-controls="profile" role="tab" data-toggle="tab">2</a></li>
-    <li role="presentation" class="btn btn-info btn-fab"><a href="#pag3" aria-controls="messages" role="tab" data-toggle="tab">3</a></li>
+    <li role="presentation" class="btn btn-info btn-fab" class="active"><a href="#pag1" aria-controls="uno" role="tab" data-toggle="tab">1</a></li>
+    <li role="presentation" class="btn btn-info btn-fab"><a href="#pag2" aria-controls="dos" role="tab" data-toggle="tab">2</a></li>
+    <li role="presentation" class="btn btn-info btn-fab"><a href="#pag3" aria-controls="tres" role="tab" data-toggle="tab">3</a></li>
+    <li role="presentation" class="btn btn-info btn-fab"><a href="#pag4" aria-controls="cuatro" role="tab" data-toggle="tab">4</a></li>
+    <li role="presentation" class="btn btn-info btn-fab"><a href="#pag5" aria-controls="cuatro" role="tab" data-toggle="tab">5</a></li>
   </ul>
 
   <!-- Tab panes -->
@@ -122,6 +124,10 @@ $this->title = 'Formulario Actividades';
 			</ul>
 		  </div>
 		</div>
+		
+	</div>
+<!-- Segunda pagina -->
+    <div role="tabpanel" class="tab-pane" id="pag2">
 
 		<div class="panel panel-default">
 		  <!-- Default panel contents -->
@@ -176,7 +182,6 @@ $this->title = 'Formulario Actividades';
 				<li class="list-group-item"><input type="radio" name="riesgo"> ORDEN Y ASEO</li>
 				<li class="list-group-item"><input type="radio" name="riesgo"> ALMACENAMIENTO</li>
 				<li class="list-group-item"><input type="radio" name="riesgo"> SEGURIDAD PERSONAL</li>
-
 				<li class="list-group-item"><input type="radio" name="riesgo"> MANEJO DE VEHÍCULOS</li>
 				<li class="list-group-item"><input type="radio" name="riesgo"> SERVICIOS SANITARIOS EN MAL ESTADO</li>
 				<li class="list-group-item"><input type="radio" name="riesgo"> DISPOSICIÓN DE BASURAS, DESECHOS Y RESIDUOS</li>
@@ -201,10 +206,6 @@ $this->title = 'Formulario Actividades';
 		  </div>
 		</div>
 
-	</div>
-<!-- Segunda pagina -->
-    <div role="tabpanel" class="tab-pane" id="pag2">
-
 		<div class="panel panel-default">
 		  <!-- Default panel contents -->
 		  <div class="panel-heading">Severidad del riesgo</div>
@@ -224,6 +225,10 @@ $this->title = 'Formulario Actividades';
 				</div>
 		  </div>
 		</div>
+		
+    </div>
+<!-- Tercera pagina -->
+    <div role="tabpanel" class="tab-pane" id="pag3">
 
 		<div class="panel panel-default">
 		  <!-- Default panel contents -->
@@ -332,6 +337,10 @@ $this->title = 'Formulario Actividades';
 			</ul>
 		  </div>
 		</div>
+		
+    </div>
+<!-- Tercera pagina -->
+    <div role="tabpanel" class="tab-pane" id="pag4">
 
 		<div class="panel panel-default">
 		  <!-- Default panel contents -->
@@ -446,10 +455,6 @@ $this->title = 'Formulario Actividades';
 		  </div>
 		</div>
 
-    </div>
-<!-- Tercera pagina -->
-    <div role="tabpanel" class="tab-pane" id="pag3">
-
 		<div class="panel panel-default">
 		  <!-- Default panel contents -->
 		  <div class="panel-heading">Indice de capacitación</div>
@@ -464,6 +469,10 @@ $this->title = 'Formulario Actividades';
 		  </div>
 		</div>
 
+    </div>
+<!-- Tercera pagina -->
+    <div role="tabpanel" class="tab-pane" id="pag5">
+	
 		<div class="panel panel-default">
 		  <!-- Default panel contents -->
 		  <div class="panel-heading">Indice de Exposición al Peligro</div>
@@ -538,6 +547,9 @@ $this->title = 'Formulario Actividades';
 		</div>
 		
 		<div class="form-group text-center">
+			<button onclick="window.location.href='<?php echo Url::toRoute(['site/listitem']); ?>'" class="btn btn-default btn-raised">
+				Cancelar
+			</button>
 			<button onclick="window.location.href='<?php echo Url::toRoute(['site/finalizar']); ?>'" class="btn btn-default btn-raised">
 				Finalizar
 			</button>
@@ -549,9 +561,11 @@ $this->title = 'Formulario Actividades';
 
 	<!-- Nav tabs -->
 	  <ul class="nav nav-tabs" id="myTabs" role="tablist">
-	    <li role="presentation" class="btn btn-info btn-fab" class="active"><a href="#pag1" aria-controls="home" role="tab" data-toggle="tab">1</a></li>
-	    <li role="presentation" class="btn btn-info btn-fab"><a href="#pag2" aria-controls="profile" role="tab" data-toggle="tab">2</a></li>
-	    <li role="presentation" class="btn btn-info btn-fab"><a href="#pag3" aria-controls="messages" role="tab" data-toggle="tab">3</a></li>
+	    <li role="presentation" class="btn btn-info btn-fab" class="active"><a href="#pag1" aria-controls="uno" role="tab" data-toggle="tab">1</a></li>
+		<li role="presentation" class="btn btn-info btn-fab"><a href="#pag2" aria-controls="dos" role="tab" data-toggle="tab">2</a></li>
+		<li role="presentation" class="btn btn-info btn-fab"><a href="#pag3" aria-controls="tres" role="tab" data-toggle="tab">3</a></li>
+		<li role="presentation" class="btn btn-info btn-fab"><a href="#pag4" aria-controls="cuatro" role="tab" data-toggle="tab">4</a></li>
+		<li role="presentation" class="btn btn-info btn-fab"><a href="#pag5" aria-controls="cuatro" role="tab" data-toggle="tab">5</a></li>
 	  </ul>
 
 <!-- Configurar margin en estilos: .nav-tabs {margin-bottom: 25px;} tabs.less-->
@@ -566,6 +580,6 @@ $this->title = 'Formulario Actividades';
 	})
 
 	$('#myTabs a[href="#pag2"]').tab('show') // Select tab by name
-	$('#myTabs a:home').tab('show') // Select first tab
-	$('#myTabs a:messages').tab('show') // Select last tab
+	$('#myTabs a:uno').tab('show') // Select first tab
+	$('#myTabs a:tres').tab('show') // Select last tab
 </script>
