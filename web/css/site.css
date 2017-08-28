@@ -1062,7 +1062,7 @@ a.desc:after {
     height: 100%;
 }
 .tab-content{
-	padding-top: 69px;
+	padding-top: 25px;
 }
 @media (min-width: 768px){
 .col-no-pad-left{
