@@ -21,7 +21,7 @@ $this->title = 'Formulario Actividades';
     <li role="presentation" class="btn btn-info btn-fab"><a href="#pag2" aria-controls="dos" role="tab" data-toggle="tab">2</a></li>
     <li role="presentation" class="btn btn-info btn-fab"><a href="#pag3" aria-controls="tres" role="tab" data-toggle="tab">3</a></li>
     <li role="presentation" class="btn btn-info btn-fab"><a href="#pag4" aria-controls="cuatro" role="tab" data-toggle="tab">4</a></li>
-    <li role="presentation" class="btn btn-info btn-fab"><a href="#pag5" aria-controls="cuatro" role="tab" data-toggle="tab">5</a></li>
+    <li role="presentation" class="btn btn-info btn-fab"><a href="#pag5" aria-controls="cinco" role="tab" data-toggle="tab">5</a></li>
   </ul>
 
   <!-- Tab panes -->
@@ -125,6 +125,10 @@ $this->title = 'Formulario Actividades';
 		  </div>
 		</div>
 		
+		<div class="form-group text-right">
+			<button onclick="myFunction()" class="btn btn-default btn-raised" href="#pag2" aria-controls="dos" role="tab" data-toggle="tab">Siguiente</button>
+		</div>
+
 	</div>
 <!-- Segunda pagina -->
     <div role="tabpanel" class="tab-pane" id="pag2">
@@ -224,6 +228,11 @@ $this->title = 'Formulario Actividades';
 					</div>
 				</div>
 		  </div>
+		</div>
+		
+		<div class="form-group text-center">
+			<button onclick="myFunction()" class="btn btn-default btn-raised" href="#pag1" aria-controls="dos" role="tab" data-toggle="tab">Anterior</button>
+			<button onclick="myFunction()" class="btn btn-default btn-raised" href="#pag3" aria-controls="dos" role="tab" data-toggle="tab">Siguiente</button>
 		</div>
 		
     </div>
@@ -336,6 +345,11 @@ $this->title = 'Formulario Actividades';
 				&nbsp;&nbsp; - Daño a la salud irreversible: intoxicaciones, lesiones múltiples, lesiones fatales."</li>
 			</ul>
 		  </div>
+		</div>
+		
+		<div class="form-group text-center">
+			<button onclick="myFunction()" class="btn btn-default btn-raised" href="#pag2" aria-controls="dos" role="tab" data-toggle="tab">Anterior</button>
+			<button onclick="myFunction()" class="btn btn-default btn-raised" href="#pag4" aria-controls="dos" role="tab" data-toggle="tab">Siguiente</button>
 		</div>
 		
     </div>
@@ -468,6 +482,11 @@ $this->title = 'Formulario Actividades';
 			</ul>
 		  </div>
 		</div>
+		
+		<div class="form-group text-center">
+			<button onclick="myFunction()" class="btn btn-default btn-raised" href="#pag3" aria-controls="dos" role="tab" data-toggle="tab">Anterior</button>
+			<button onclick="myFunction()" class="btn btn-default btn-raised" href="#pag5" aria-controls="dos" role="tab" data-toggle="tab">Siguiente</button>
+		</div>
 
     </div>
 <!-- Tercera pagina -->
@@ -547,9 +566,11 @@ $this->title = 'Formulario Actividades';
 		</div>
 		
 		<div class="form-group text-center">
-			<button onclick="window.location.href='<?php echo Url::toRoute(['site/listitem']); ?>'" class="btn btn-default btn-raised">
+			<div class="form-group text-center">
+			<button onclick="myFunction()" class="btn btn-default btn-raised" href="#pag4" aria-controls="dos" role="tab" data-toggle="tab">Anterior</button>
+			<!--<button onclick="window.location.href='<?php echo Url::toRoute(['site/listitem']); ?>'" class="btn btn-default btn-raised">
 				Cancelar
-			</button>
+			</button>-->
 			<button onclick="window.location.href='<?php echo Url::toRoute(['site/finalizar']); ?>'" class="btn btn-default btn-raised">
 				Finalizar
 			</button>
@@ -559,14 +580,7 @@ $this->title = 'Formulario Actividades';
 
   </div>
 
-	<!-- Nav tabs -->
-	  <ul class="nav nav-tabs" id="myTabs" role="tablist">
-	    <li role="presentation" class="btn btn-info btn-fab" class="active"><a href="#pag1" aria-controls="uno" role="tab" data-toggle="tab">1</a></li>
-		<li role="presentation" class="btn btn-info btn-fab"><a href="#pag2" aria-controls="dos" role="tab" data-toggle="tab">2</a></li>
-		<li role="presentation" class="btn btn-info btn-fab"><a href="#pag3" aria-controls="tres" role="tab" data-toggle="tab">3</a></li>
-		<li role="presentation" class="btn btn-info btn-fab"><a href="#pag4" aria-controls="cuatro" role="tab" data-toggle="tab">4</a></li>
-		<li role="presentation" class="btn btn-info btn-fab"><a href="#pag5" aria-controls="cuatro" role="tab" data-toggle="tab">5</a></li>
-	  </ul>
+	
 
 <!-- Configurar margin en estilos: .nav-tabs {margin-bottom: 25px;} tabs.less-->
 <br>
@@ -582,4 +596,13 @@ $this->title = 'Formulario Actividades';
 	$('#myTabs a[href="#pag2"]').tab('show') // Select tab by name
 	$('#myTabs a:uno').tab('show') // Select first tab
 	$('#myTabs a:tres').tab('show') // Select last tab
+</script>
+
+
+
+<script>
+function myFunction() {
+    $("body,html").animate({scrollTop : 0}, 500);
+    return false;
+}
 </script>
