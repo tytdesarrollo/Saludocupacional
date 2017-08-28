@@ -17,9 +17,9 @@ $this->title = 'Formulario Actividades';
 
     <!-- Nav tabs -->
   <ul class="nav nav-tabs" id="myTabs" role="tablist">
-    <li role="presentation" class="active"><a href="#pag1" aria-controls="home" role="tab" data-toggle="tab">1</a></li>
-    <li role="presentation"><a href="#pag2" aria-controls="profile" role="tab" data-toggle="tab">2</a></li>
-    <li role="presentation"><a href="#pag3" aria-controls="messages" role="tab" data-toggle="tab">3</a></li>
+    <li role="presentation" class="btn btn-info btn-fab" class="active"><a href="#pag1" aria-controls="home" role="tab" data-toggle="tab">1</a></li>
+    <li role="presentation" class="btn btn-info btn-fab"><a href="#pag2" aria-controls="profile" role="tab" data-toggle="tab">2</a></li>
+    <li role="presentation" class="btn btn-info btn-fab"><a href="#pag3" aria-controls="messages" role="tab" data-toggle="tab">3</a></li>
   </ul>
 
   <!-- Tab panes -->
@@ -536,15 +536,22 @@ $this->title = 'Formulario Actividades';
 			</ul>
 		  </div>
 		</div>
+		
+		<div class="form-group text-center">
+			<button onclick="window.location.href='<?php echo Url::toRoute(['site/finalizar']); ?>'" class="btn btn-default btn-raised">
+				Finalizar
+			</button>
+		</div>
+		
     </div>
 
   </div>
 
 	<!-- Nav tabs -->
 	  <ul class="nav nav-tabs" id="myTabs" role="tablist">
-	    <li role="presentation" class="active"><a href="#pag1" aria-controls="home" role="tab" data-toggle="tab">1</a></li>
-	    <li role="presentation"><a href="#pag2" aria-controls="profile" role="tab" data-toggle="tab">2</a></li>
-	    <li role="presentation"><a href="#pag3" aria-controls="messages" role="tab" data-toggle="tab">3</a></li>
+	    <li role="presentation" class="btn btn-info btn-fab" class="active"><a href="#pag1" aria-controls="home" role="tab" data-toggle="tab">1</a></li>
+	    <li role="presentation" class="btn btn-info btn-fab"><a href="#pag2" aria-controls="profile" role="tab" data-toggle="tab">2</a></li>
+	    <li role="presentation" class="btn btn-info btn-fab"><a href="#pag3" aria-controls="messages" role="tab" data-toggle="tab">3</a></li>
 	  </ul>
 
 <!-- Configurar margin en estilos: .nav-tabs {margin-bottom: 25px;} tabs.less-->
