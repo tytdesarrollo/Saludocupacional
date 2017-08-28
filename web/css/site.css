@@ -2498,7 +2498,62 @@ MATERIAL-SELECT
 }
 .rev__content-btn-addrev .btn-fab > i.material-icons{
 	font-size: 40px;
+	-webkit-transform: translate(-20px, -20px);
+    -ms-transform: translate(-20px, -20px);
+    -o-transform: translate(-20px, -20px);
     transform: translate(-20px, -20px);
     width: 40px;
     line-height: 40px;
+}
+
+/* ESTILOS ACTIVIDADES */
+.act__content-title{
+	padding-bottom: 56px;
+}
+.act__main-content{
+	position: relative;
+	padding-top: 40px;
+}
+.act__list{
+	list-style: none;
+    padding: 0;
+}
+.act__list li{
+	padding: 15px 15px;
+    border-bottom: 1px solid #ddd;
+}
+.list-item-desc{
+	padding: 5px 10px;
+}
+.list-item-actions{
+	padding: 8px 10px;
+}
+.act__content-btn-additem{
+	position: absolute;
+	right: 30px;
+	top: -28px;
+}
+.act__content-btn-additem .btn-fab > i.material-icons{
+	width: 36px;
+    line-height: 36px;
+    -webkit-transform: translate(-18px, -18px);
+    -ms-transform: translate(-18px, -18px);
+    -o-transform: translate(-18px, -18px);
+    transform: translate(-18px, -18px);
+    font-size: 36px;
+}
+
+/* ESTILOS FIN */
+.fin__main-content{
+	padding: 10vh 20px;
+}
+.fin__content-percent .percent{
+	width: 200px;
+	height: 200px;
+	margin: 0 auto;
+	border-radius: 50%;
+	font-size: 50px;
+	text-align: center;
+	line-height: 184px;
+	border: 8px solid #ddd;
 }
