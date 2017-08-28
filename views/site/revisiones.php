@@ -77,7 +77,7 @@ $this->title = 'Revisiones';
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
-        <button onclick="window.location.href='<?php echo Url::toRoute(['site/listitem']); ?>'" href="" type="button" class="btn btn-primary">Crear</button>
+        <button onclick="window.location.href='<?php echo Url::toRoute(['site/listitem']); ?>'" type="button" class="btn btn-primary">Crear</button>
       </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
