@@ -16,7 +16,7 @@ $this->title = 'Lista de Actividades';
 	</div>
 	<div class="row act__main-content">
 		<div class="act__content-btn-additem">
-			<button onclick="window.location.href='<?php echo Url::toRoute(['site/formitem']); ?>'" class="btn btn-success btn-fab">
+			<button onclick="window.location.href='<?php echo Url::toRoute(['site/formitem']); ?>'" class="btn btn-additem btn-fab btn-raised">
 				<i class="material-icons">&#xE145;</i>
 			</button>
 		</div>
