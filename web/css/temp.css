@@ -18,15 +18,13 @@
     width: 52px;
 }
 
-.btn.btn-raised:not(.btn-link), .input-group-btn .btn.btn-raised:not(.btn-link), .btn-group-raised .btn:not(.btn-link), .btn-group-raised .input-group-btn .btn:not(.btn-link) {
-    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
-    background-color: #ffabd0;
-	color: #662074 ;
-}
-
 .panel > .panel-heading, .panel.panel-default > .panel-heading {
     background-color: transparent;
 	font-size: 20px;
 	
+}
+
+.btn-actions{
+	background-color: #ffabd0 !important;
+	color: #662074 !important;
 }
