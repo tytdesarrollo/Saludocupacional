@@ -97,6 +97,7 @@ class SiteController extends Controller
     }
 	public function actionListitem()
     {
+		$this->layout='mainwhite';
         return $this->render('listitem');
     }
 	public function actionRevisiones()

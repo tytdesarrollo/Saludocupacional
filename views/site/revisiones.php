@@ -49,7 +49,7 @@ $this->title = 'Revisiones';
 		</div>
 	</div>
 	<div class="rev__content-btn-addrev">
-		<button class="btn btn-success btn-fab" data-toggle="modal" data-target="#modalCrearRevision">
+		<button class="btn btn-addrev btn-fab btn-raised" data-toggle="modal" data-target="#modalCrearRevision">
 			<i class="material-icons">&#xE145;</i>
 		</button>
 	</div>

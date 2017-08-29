@@ -2464,12 +2464,32 @@ MATERIAL-SELECT
 
 
 /* ESTILOS SALUD OCUPACIONAL */
-
+.bg-white{
+	background-color: #fff;
+}
+.bg-orange-grad{
+	background: #ff9966; /* Old browsers */
+	background: -moz-linear-gradient(top, #ff9966 0%, #ff5e62 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #ff9966 0%,#ff5e62 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #ff9966 0%,#ff5e62 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9966', endColorstr='#ff5e62',GradientType=0 ); /* IE6-9 */
+}
+.bg-heatlh{
+	background: #564f91; /* Old browsers */
+	background: -moz-linear-gradient(top, #564f91 0%, #854f90 50%, #e6458a 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #564f91 0%,#854f90 50%,#e6458a 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #564f91 0%,#854f90 50%,#e6458a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#564f91', endColorstr='#e6458a',GradientType=0 ); /* IE6-9 */
+	background-attachment: fixed;
+}
 .main-health .main-title{
 	text-transform: uppercase;
     text-align: center;
     margin-bottom: 20px;
+	color: #fff;
 }
+
+/* ESTILOS REVISIONES */
 .main-health .rev__title{
 	margin-top: 10px;
 }
@@ -2492,6 +2512,11 @@ MATERIAL-SELECT
     left: 50%;
     margin-left: -35px;
 }
+.rev__content-btn-addrev .btn-addrev{
+	background-color: #303f9f;
+	border: 3px solid #9598e6;
+	color: #ffffff;
+}
 .rev__content-btn-addrev .btn-fab{
 	width: 70px;
 	height: 70px;
@@ -2509,6 +2534,12 @@ MATERIAL-SELECT
 /* ESTILOS ACTIVIDADES */
 .act__content-title{
 	padding-bottom: 56px;
+	/* background-color: #564f91; */
+	background: #564f91; /* Old browsers */
+	background: -moz-linear-gradient(top, #564f91 0%, #684f91 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #564f91 0%,#684f91 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #564f91 0%,#684f91 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#564f91', endColorstr='#684f91',GradientType=0 ); /* IE6-9 */
 }
 .act__main-content{
 	position: relative;
@@ -2532,6 +2563,11 @@ MATERIAL-SELECT
 	position: absolute;
 	right: 30px;
 	top: -28px;
+}
+.act__content-btn-additem .btn-additem{
+	background-color: #303f9f;
+	border: 3px solid #9598e6;
+	color: #ffffff;
 }
 .act__content-btn-additem .btn-fab > i.material-icons{
 	width: 36px;
