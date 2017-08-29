@@ -24,7 +24,7 @@ AppAsset::register($this);
 <body class="bg-white">
 <?php $this->beginBody() ?>
 
-<div class="wrap">
+<div class="health-wrap">
     <!--<?php
     NavBar::begin([
         'brandLabel' => 'My Company',
@@ -56,7 +56,7 @@ AppAsset::register($this);
     NavBar::end();
     ?>-->
 
-    <div class="container">
+    <div class="health-content container">
         <!--<?= Breadcrumbs::widget([
             'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
         ]) ?>-->

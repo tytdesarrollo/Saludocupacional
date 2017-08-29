@@ -106,6 +106,7 @@ class SiteController extends Controller
     }
 	public function actionFinalizar()
     {
+		$this->layout='mainwhite';
         return $this->render('finalizar');
     }
 }
