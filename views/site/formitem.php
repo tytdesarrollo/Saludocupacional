@@ -17,11 +17,11 @@ $this->title = 'Formulario Actividades';
 
     <!-- Nav tabs -->
   <ul class="nav nav-tabs" id="myTabs" role="tablist">
-    <li role="presentation" class="btn btn-info btn-fab" class="active"><a href="#pag1" aria-controls="uno" role="tab" data-toggle="tab">1</a></li>
-    <li role="presentation" class="btn btn-info btn-fab"><a href="#pag2" aria-controls="dos" role="tab" data-toggle="tab">2</a></li>
-    <li role="presentation" class="btn btn-info btn-fab"><a href="#pag3" aria-controls="tres" role="tab" data-toggle="tab">3</a></li>
-    <li role="presentation" class="btn btn-info btn-fab"><a href="#pag4" aria-controls="cuatro" role="tab" data-toggle="tab">4</a></li>
-    <li role="presentation" class="btn btn-info btn-fab"><a href="#pag5" aria-controls="cinco" role="tab" data-toggle="tab">5</a></li>
+    <li role="presentation" class="btn btn-info btn-fab btn-tabs" class="active"><a href="#pag1" aria-controls="uno" role="tab" data-toggle="tab">1</a></li>
+    <li role="presentation" class="btn btn-info btn-fab btn-tabs"><a href="#pag2" aria-controls="dos" role="tab" data-toggle="tab">2</a></li>
+    <li role="presentation" class="btn btn-info btn-fab btn-tabs"><a href="#pag3" aria-controls="tres" role="tab" data-toggle="tab">3</a></li>
+    <li role="presentation" class="btn btn-info btn-fab btn-tabs"><a href="#pag4" aria-controls="cuatro" role="tab" data-toggle="tab">4</a></li>
+    <li role="presentation" class="btn btn-info btn-fab btn-tabs"><a href="#pag5" aria-controls="cinco" role="tab" data-toggle="tab">5</a></li>
   </ul>
 
   <!-- Tab panes -->
@@ -209,6 +209,15 @@ $this->title = 'Formulario Actividades';
 			</ul>
 		  </div>
 		</div>
+		
+		<div class="form-group text-center">
+			<button onclick="myFunction()" class="btn btn-default btn-raised" href="#pag1" aria-controls="dos" role="tab" data-toggle="tab">Anterior</button>
+			<button onclick="myFunction()" class="btn btn-default btn-raised" href="#pag3" aria-controls="dos" role="tab" data-toggle="tab">Siguiente</button>
+		</div>
+		
+    </div>
+<!-- Tercera pagina -->
+    <div role="tabpanel" class="tab-pane" id="pag3">
 
 		<div class="panel panel-default">
 		  <!-- Default panel contents -->
@@ -229,22 +238,14 @@ $this->title = 'Formulario Actividades';
 				</div>
 		  </div>
 		</div>
-		
-		<div class="form-group text-center">
-			<button onclick="myFunction()" class="btn btn-default btn-raised" href="#pag1" aria-controls="dos" role="tab" data-toggle="tab">Anterior</button>
-			<button onclick="myFunction()" class="btn btn-default btn-raised" href="#pag3" aria-controls="dos" role="tab" data-toggle="tab">Siguiente</button>
-		</div>
-		
-    </div>
-<!-- Tercera pagina -->
-    <div role="tabpanel" class="tab-pane" id="pag3">
 
 		<div class="panel panel-default">
 		  <!-- Default panel contents -->
 		  <div class="panel-heading">Indice de Personas expuestas</div>
 		  <div class="panel-body">
-			<!-- List group -->
-			<input type="number" name="points" min="0" max="100" step="1" value="0">
+			<div class="form-group label-floating">
+				<input class="form-control" id="focusedInput1" type="number" name="points" min="0" max="100">
+			</div>
 		  </div>
 		</div>
 
@@ -303,8 +304,13 @@ $this->title = 'Formulario Actividades';
 		  <div class="panel-body">
 			<!-- List group -->
 			<ul class="list-group">
-				<li class="list-group-item"><input type="text" name="verificacion"></li>
-				<li class="list-group-item"><input type="button" value="Verificar" onclick="verificar()"></li>
+				<li class="list-group-item">
+					<div class="form-group label-floating">
+						<input class="form-control" id="focusedInput1" type="number" name="points" min="0" max="100">
+					</div>
+				</li>
+				<li class="list-group-item"><!--<input type="button" value="Verificar" onclick="verificar()">-->
+				<button class="btn btn-default btn-raised">Verificar</button></li></li>
 		<script>
 		var saldo = 0,
 		deposito;
@@ -324,12 +330,25 @@ $this->title = 'Formulario Actividades';
 		  <div class="panel-body">
 			<!-- List group -->
 			<ul class="list-group">
-				<li class="list-group-item"><input type="text" name="verificacion"></li>
+				<li class="list-group-item">
+					<div class="form-group label-floating">
+						<input class="form-control" id="focusedInput1" type="number" name="points" min="0" max="100">
+					</div>
+				<!--<input type="text" name="verificacion">--> </li>
 				<li class="list-group-item"><!-- Accent-colored raised button with ripple -->
-				<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Button</button></li>
+				<button class="btn btn-default btn-raised">Verificar</button></li></li>
 			</ul>
 		  </div>
 		</div>
+		
+		<div class="form-group text-center">
+			<button onclick="myFunction()" class="btn btn-default btn-raised" href="#pag2" aria-controls="dos" role="tab" data-toggle="tab">Anterior</button>
+			<button onclick="myFunction()" class="btn btn-default btn-raised" href="#pag4" aria-controls="dos" role="tab" data-toggle="tab">Siguiente</button>
+		</div>
+		
+    </div>
+<!-- Tercera pagina -->
+    <div role="tabpanel" class="tab-pane" id="pag4">
 		
 		<div class="panel panel-default">
 		  <!-- Default panel contents -->
@@ -346,15 +365,6 @@ $this->title = 'Formulario Actividades';
 			</ul>
 		  </div>
 		</div>
-		
-		<div class="form-group text-center">
-			<button onclick="myFunction()" class="btn btn-default btn-raised" href="#pag2" aria-controls="dos" role="tab" data-toggle="tab">Anterior</button>
-			<button onclick="myFunction()" class="btn btn-default btn-raised" href="#pag4" aria-controls="dos" role="tab" data-toggle="tab">Siguiente</button>
-		</div>
-		
-    </div>
-<!-- Tercera pagina -->
-    <div role="tabpanel" class="tab-pane" id="pag4">
 
 		<div class="panel panel-default">
 		  <!-- Default panel contents -->
@@ -363,7 +373,9 @@ $this->title = 'Formulario Actividades';
 			<!-- Textfield with Floating Label -->
 			<form action="#">
 			  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-			    <input class="mdl-textfield__input" type="text" id="sample3">
+					<div class="form-group label-floating">
+						<input class="form-control" id="focusedInput1" type="number" name="points" min="0" max="100">
+					</div>
 			    <!-- <label class="mdl-textfield__label" for="sample3">Escribir...</label> -->
 			  </div>
 			</form>
@@ -377,7 +389,9 @@ $this->title = 'Formulario Actividades';
 			<!-- Textfield with Floating Label -->
 			<form action="#">
 			  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-			    <input class="mdl-textfield__input" type="text" id="sample3">
+					<div class="form-group label-floating">
+						<input class="form-control" id="focusedInput1" type="number" name="points" min="0" max="100">
+					</div>
 			  </div>
 			</form>
 		  </div>
@@ -390,7 +404,9 @@ $this->title = 'Formulario Actividades';
 			<!-- Textfield with Floating Label -->
 			<form action="#">
 			  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-			    <input class="mdl-textfield__input" type="text" id="sample3">
+					<div class="form-group label-floating">
+						<input class="form-control" id="focusedInput1" type="number" name="points" min="0" max="100">
+					</div>
 			  </div>
 			</form>
 		  </div>
@@ -403,7 +419,9 @@ $this->title = 'Formulario Actividades';
 			<!-- Textfield with Floating Label -->
 			<form action="#">
 			  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-			    <input class="mdl-textfield__input" type="text" id="sample3">
+					<div class="form-group label-floating">
+						<input class="form-control" id="focusedInput1" type="number" name="points" min="0" max="100">
+					</div>
 			  </div>
 			</form>
 		  </div>
@@ -416,7 +434,9 @@ $this->title = 'Formulario Actividades';
 			<!-- Textfield with Floating Label -->
 			<form action="#">
 			  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-			    <input class="mdl-textfield__input" type="text" id="sample3">
+					<div class="form-group label-floating">
+						<input class="form-control" id="focusedInput1" type="number" name="points" min="0" max="100">
+					</div>
 			  </div>
 			</form>
 		  </div>
@@ -429,7 +449,9 @@ $this->title = 'Formulario Actividades';
 			<!-- Textfield with Floating Label -->
 			<form action="#">
 			  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-			    <input class="mdl-textfield__input" type="text" id="sample3">
+					<div class="form-group label-floating">
+						<input class="form-control" id="focusedInput1" type="number" name="points" min="0" max="100">
+					</div>
 			  </div>
 			</form>
 		  </div>
@@ -519,8 +541,12 @@ $this->title = 'Formulario Actividades';
 		  <div class="panel-body">
 			<!-- List group -->
 			<ul class="list-group">
-				<li class="list-group-item"><input type="text" name="verificacion"></li>
-				<li class="list-group-item"><input type="button" value="Verificar" onclick="verificar()"></li>
+				<li class="list-group-item">
+					<div class="form-group label-floating">
+						<input class="form-control" id="focusedInput1" type="number" name="points" min="0" max="100">
+					</div></li>
+				<li class="list-group-item"><!--<input type="button" value="Verificar" onclick="verificar()">-->
+				<button class="btn btn-default btn-raised">Verificar</button></li></li>
 		<script>
 		var saldo = 0,
 		deposito;
@@ -540,9 +566,12 @@ $this->title = 'Formulario Actividades';
 		  <div class="panel-body">
 			<!-- List group -->
 			<ul class="list-group">
-				<li class="list-group-item"><input type="text" name="verificacion"></li>
+				<li class="list-group-item">
+					<div class="form-group label-floating">
+						<input class="form-control" id="focusedInput1" type="number" name="points" min="0" max="100">
+					</div></li>
 				<li class="list-group-item"><!-- Accent-colored raised button with ripple -->
-				<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Button</button></li>
+				<button class="btn btn-default btn-raised">Verificar</button></li>
 			</ul>
 		  </div>
 		</div>
