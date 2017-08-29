@@ -25,9 +25,9 @@ $this->title = 'Lista de Actividades';
 				<li>
 					<div class="clearfix">
 						<div class="pull-left">
-							<button class="btn btn-info btn-fab">
+							<div class="small-percent progress-green">
 								1
-							</button>
+							</div>
 						</div>
 						<div class="pull-left list-item-desc">
 							<h3 class="rev__title">Actividad</h3>
@@ -45,9 +45,9 @@ $this->title = 'Lista de Actividades';
 				<li>
 					<div class="clearfix">
 						<div class="pull-left">
-							<button class="btn btn-info btn-fab">
+							<div class="small-percent progress-orange">
 								2
-							</button>
+							</div>
 						</div>
 						<div class="pull-left list-item-desc">
 							<h3 class="rev__title">Actividad</h3>
@@ -65,9 +65,9 @@ $this->title = 'Lista de Actividades';
 				<li>
 					<div class="clearfix">
 						<div class="pull-left">
-							<button class="btn btn-info btn-fab">
+							<div class="small-percent progress-red">
 								3
-							</button>
+							</div>
 						</div>
 						<div class="pull-left list-item-desc">
 							<h3 class="rev__title">Actividad</h3>
@@ -85,9 +85,9 @@ $this->title = 'Lista de Actividades';
 				<li>
 					<div class="clearfix">
 						<div class="pull-left">
-							<button class="btn btn-info btn-fab">
+							<div class="small-percent progress-green">
 								4
-							</button>
+							</div>
 						</div>
 						<div class="pull-left list-item-desc">
 							<h3 class="rev__title">Actividad</h3>

@@ -2464,6 +2464,18 @@ MATERIAL-SELECT
 
 
 /* ESTILOS SALUD OCUPACIONAL */
+body{
+	color: #3D4C5E;
+}
+.txt-white{
+	color: #ffffff;
+}
+.health-wrap{
+	height: 100%;
+}
+.health-content{
+	height: 100%;
+}
 .bg-white{
 	background-color: #fff;
 }
@@ -2474,7 +2486,7 @@ MATERIAL-SELECT
 	background: linear-gradient(to bottom, #ff9966 0%,#ff5e62 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9966', endColorstr='#ff5e62',GradientType=0 ); /* IE6-9 */
 }
-.bg-heatlh{
+.bg-health{
 	background: #564f91; /* Old browsers */
 	background: -moz-linear-gradient(top, #564f91 0%, #854f90 50%, #e6458a 100%); /* FF3.6-15 */
 	background: -webkit-linear-gradient(top, #564f91 0%,#854f90 50%,#e6458a 100%); /* Chrome10-25,Safari5.1-6 */
@@ -2482,11 +2494,29 @@ MATERIAL-SELECT
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#564f91', endColorstr='#e6458a',GradientType=0 ); /* IE6-9 */
 	background-attachment: fixed;
 }
+.bg-green-grad{
+	background: #00a938; /* Old browsers */
+	background: -moz-linear-gradient(-45deg, #00a938 30%, #008a2c 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg, #00a938 30%,#008a2c 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg, #00a938 30%,#008a2c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00a938', endColorstr='#008a2c',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.main-health .fin__main{
+	height: 100%;
+}
 .main-health .main-title{
 	text-transform: uppercase;
     text-align: center;
     margin-bottom: 20px;
 	color: #fff;
+}
+.btn-black{
+	background-color: rgba(0, 0, 0, 0.6) !important;
+	color: #ffffff !important;
+}
+.btn-white{
+	background-color: rgba(255, 255, 255, 0.8) !important;
+	color: #000000 !important;
 }
 
 /* ESTILOS REVISIONES */
@@ -2507,7 +2537,7 @@ MATERIAL-SELECT
 	margin-top: -20px;
 }
 .rev__content-btn-addrev{
-	position: absolute;
+	position: fixed;
     bottom: 30px;
     left: 50%;
     margin-left: -35px;
@@ -2516,6 +2546,10 @@ MATERIAL-SELECT
 	background-color: #303f9f;
 	border: 3px solid #9598e6;
 	color: #ffffff;
+}
+.rev__content-btn-addrev .btn-addrev:focus, .rev__content-btn-addrev .btn-addrev:hover{
+	background-color: #5060ca !important;
+	border-color: #bec0f3;
 }
 .rev__content-btn-addrev .btn-fab{
 	width: 70px;
@@ -2553,6 +2587,26 @@ MATERIAL-SELECT
 	padding: 15px 15px;
     border-bottom: 1px solid #ddd;
 }
+.small-percent{
+	width: 56px;
+    height: 56px;
+	margin-right: 5px;
+    font-size: 24px;
+	line-height: 50px;
+    font-weight: 500;
+	text-align: center;
+    border: 5px solid;
+	border-radius: 50%;
+}
+.progress-green{
+	border-color: #00a938;
+}
+.progress-orange{
+	border-color: #fd7d00;
+}
+.progress-red{
+	border-color: #fd2c00;
+}
 .list-item-desc{
 	padding: 5px 10px;
 }
@@ -2569,6 +2623,10 @@ MATERIAL-SELECT
 	border: 3px solid #9598e6;
 	color: #ffffff;
 }
+.act__content-btn-additem .btn-additem:focus, .act__content-btn-additem .btn-additem:hover{
+	background-color: #5060ca !important;
+	border-color: #bec0f3;
+}
 .act__content-btn-additem .btn-fab > i.material-icons{
 	width: 36px;
     line-height: 36px;
@@ -2581,7 +2639,23 @@ MATERIAL-SELECT
 
 /* ESTILOS FIN */
 .fin__main-content{
-	padding: 10vh 20px;
+	position: relative;
+	padding: 15px 20px 38px;
+	overflow: hidden;
+}
+.fin__main-content .main-title{
+	margin-top: 0;
+}
+.box-bg{
+    position: absolute;
+    width: 200%;
+    height: 100%;
+    left: 50%;
+	top: 0;
+    margin-left: -100%;
+    z-index: -1;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
 }
 .fin__content-percent .percent{
 	width: 200px;
@@ -2592,4 +2666,33 @@ MATERIAL-SELECT
 	text-align: center;
 	line-height: 184px;
 	border: 8px solid #ddd;
+}
+.fin__content-buttons{
+	margin-top: 20px;
+}
+.fin__content-email{
+	margin-top: 40px;
+	padding: 0 24px;
+}
+.fin__content-email .txt-desc{
+	font-size: 18px;
+	text-align: center;
+}
+.fin__content-email .input-group .input-group-btn{
+	padding: 0 0 0 12px;
+}
+.form-group.is-focused label, .form-group.is-focused label.control-label{
+	color: #3D4C5E;
+}
+.form-control, .form-group .form-control{
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#3D4C5E), to(#3D4C5E)), -webkit-gradient(linear, left top, left bottom, from(#D2D2D2), to(#D2D2D2));
+    background-image: -webkit-linear-gradient(#3D4C5E, #3D4C5E), -webkit-linear-gradient(#D2D2D2, #D2D2D2);
+    background-image: -o-linear-gradient(#3D4C5E, #3D4C5E), -o-linear-gradient(#D2D2D2, #D2D2D2);
+    background-image: linear-gradient(#3D4C5E, #3D4C5E), linear-gradient(#D2D2D2, #D2D2D2);
+}
+.form-group.is-focused .form-control{
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#3D4C5E), to(#3D4C5E)), -webkit-gradient(linear, left top, left bottom, from(#D2D2D2), to(#D2D2D2));
+    background-image: -webkit-linear-gradient(#3D4C5E, #3D4C5E), -webkit-linear-gradient(#D2D2D2, #D2D2D2);
+    background-image: -o-linear-gradient(#3D4C5E, #3D4C5E), -o-linear-gradient(#D2D2D2, #D2D2D2);
+    background-image: linear-gradient(#3D4C5E, #3D4C5E), linear-gradient(#D2D2D2, #D2D2D2);
 }
