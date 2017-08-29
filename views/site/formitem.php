@@ -126,7 +126,7 @@ $this->title = 'Formulario Actividades';
 		</div>
 		
 		<div class="form-group text-right">
-			<button onclick="myFunction()" class="btn btn-default btn-raised" href="#pag2" aria-controls="dos" role="tab" data-toggle="tab">Siguiente</button>
+			<button onclick="myFunction()" class="btn btn-actions btn-raised" href="#pag2" aria-controls="dos" role="tab" data-toggle="tab">Siguiente</button>
 		</div>
 
 	</div>
@@ -211,8 +211,8 @@ $this->title = 'Formulario Actividades';
 		</div>
 		
 		<div class="form-group text-center">
-			<button onclick="myFunction()" class="btn btn-default btn-raised" href="#pag1" aria-controls="dos" role="tab" data-toggle="tab">Anterior</button>
-			<button onclick="myFunction()" class="btn btn-default btn-raised" href="#pag3" aria-controls="dos" role="tab" data-toggle="tab">Siguiente</button>
+			<button onclick="myFunction()" class="btn btn-actions btn-raised" href="#pag1" aria-controls="dos" role="tab" data-toggle="tab">Anterior</button>
+			<button onclick="myFunction()" class="btn btn-actions btn-raised" href="#pag3" aria-controls="dos" role="tab" data-toggle="tab">Siguiente</button>
 		</div>
 		
     </div>
@@ -342,8 +342,8 @@ $this->title = 'Formulario Actividades';
 		</div>
 		
 		<div class="form-group text-center">
-			<button onclick="myFunction()" class="btn btn-default btn-raised" href="#pag2" aria-controls="dos" role="tab" data-toggle="tab">Anterior</button>
-			<button onclick="myFunction()" class="btn btn-default btn-raised" href="#pag4" aria-controls="dos" role="tab" data-toggle="tab">Siguiente</button>
+			<button onclick="myFunction()" class="btn btn-actions btn-raised" href="#pag2" aria-controls="dos" role="tab" data-toggle="tab">Anterior</button>
+			<button onclick="myFunction()" class="btn btn-actions btn-raised" href="#pag4" aria-controls="dos" role="tab" data-toggle="tab">Siguiente</button>
 		</div>
 		
     </div>
@@ -506,8 +506,8 @@ $this->title = 'Formulario Actividades';
 		</div>
 		
 		<div class="form-group text-center">
-			<button onclick="myFunction()" class="btn btn-default btn-raised" href="#pag3" aria-controls="dos" role="tab" data-toggle="tab">Anterior</button>
-			<button onclick="myFunction()" class="btn btn-default btn-raised" href="#pag5" aria-controls="dos" role="tab" data-toggle="tab">Siguiente</button>
+			<button onclick="myFunction()" class="btn btn-actions btn-raised" href="#pag3" aria-controls="dos" role="tab" data-toggle="tab">Anterior</button>
+			<button onclick="myFunction()" class="btn btn-actions btn-raised" href="#pag5" aria-controls="dos" role="tab" data-toggle="tab">Siguiente</button>
 		</div>
 
     </div>
@@ -596,11 +596,11 @@ $this->title = 'Formulario Actividades';
 		
 		<div class="form-group text-center">
 			<div class="form-group text-center">
-			<button onclick="myFunction()" class="btn btn-default btn-raised" href="#pag4" aria-controls="dos" role="tab" data-toggle="tab">Anterior</button>
+			<button onclick="myFunction()" class="btn btn-actions btn-raised" href="#pag4" aria-controls="dos" role="tab" data-toggle="tab">Anterior</button>
 			<!--<button onclick="window.location.href='<?php echo Url::toRoute(['site/listitem']); ?>'" class="btn btn-default btn-raised">
 				Cancelar
 			</button>-->
-			<button onclick="window.location.href='<?php echo Url::toRoute(['site/finalizar']); ?>'" class="btn btn-default btn-raised">
+			<button onclick="window.location.href='<?php echo Url::toRoute(['site/finalizar']); ?>'" class="btn btn-actions btn-raised">
 				Finalizar
 			</button>
 		</div>
