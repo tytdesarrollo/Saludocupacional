@@ -2568,8 +2568,8 @@ body{
 	border-color: #bec0f3;
 }
 .rev__content-btn-addrev .btn-fab{
-	width: 70px;
-	height: 70px;
+	width: 70px !important;
+	height: 70px !important;
 }
 .rev__content-btn-addrev .btn-fab > i.material-icons{
 	font-size: 40px;
