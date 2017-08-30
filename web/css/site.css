@@ -2362,8 +2362,6 @@ MATERIAL-SELECT
 }
 .mad-select li{
   vertical-align: middle;
-  white-space: nowrap;
-  height:24px;
   line-height:24px;
   display: none;
   padding: 8px 16px;
@@ -2517,6 +2515,24 @@ body{
 .btn-white{
 	background-color: rgba(255, 255, 255, 0.8) !important;
 	color: #000000 !important;
+}
+.radio input[type=radio]:checked ~ .circle, label.radio-inline input[type=radio]:checked ~ .circle{
+	border-color: #03a9f4;
+}
+.radio input[type=radio]:checked ~ .check, label.radio-inline input[type=radio]:checked ~ .check{
+	background-color: #03a9f4;
+}
+.checkbox label, .radio label, label{
+	color: #3D4C5E;
+}
+.mad-select{
+	width: 100%;
+}
+.mad-select ul.mad-select-drop{
+	width: 100%;
+}
+.tab-content .form-group{
+	margin-top: 0;
 }
 
 /* ESTILOS REVISIONES */
