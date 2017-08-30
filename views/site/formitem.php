@@ -10,7 +10,7 @@ use yii\helpers\Url;
 
 $this->title = 'Formulario Actividades';
 ?>
-<div class="site-about">
+<div class="site-about text-center">
     
 <!-- Configurar margin en estilos: .nav-tabs {margin-top: 25px;} tabs.less-->
 <br>
@@ -18,14 +18,13 @@ $this->title = 'Formulario Actividades';
     <!-- Nav tabs -->
   <ul class="nav nav-tabs" id="myTabs" role="tablist">
     <li role="presentation" class="btn btn-info btn-fab btn-tabs" class="active"><a href="#pag1" aria-controls="uno" role="tab" data-toggle="tab">1</a></li>
-    <li role="presentation" class="btn btn-info btn-fab btn-tabs"><a href="#pag2" aria-controls="dos" role="tab" data-toggle="tab">2</a></li>
-    <li role="presentation" class="btn btn-info btn-fab btn-tabs"><a href="#pag3" aria-controls="tres" role="tab" data-toggle="tab">3</a></li>
-    <li role="presentation" class="btn btn-info btn-fab btn-tabs"><a href="#pag4" aria-controls="cuatro" role="tab" data-toggle="tab">4</a></li>
-    <li role="presentation" class="btn btn-info btn-fab btn-tabs"><a href="#pag5" aria-controls="cinco" role="tab" data-toggle="tab">5</a></li>
+    <li role="presentation" class="btn btn-info btn-fab btn-tabs"><a href="#pag3" aria-controls="tres" role="tab" data-toggle="tab">2</a></li>
+    <li role="presentation" class="btn btn-info btn-fab btn-tabs"><a href="#pag4" aria-controls="cuatro" role="tab" data-toggle="tab">3</a></li>
+    <li role="presentation" class="btn btn-info btn-fab btn-tabs"><a href="#pag5" aria-controls="cinco" role="tab" data-toggle="tab">4</a></li>
   </ul>
 
   <!-- Tab panes -->
-  <div class="tab-content">
+  <div class="tab-content text-left">
 <!-- primer pagina -->
 	<div role="tabpanel" class="tab-pane active" id="pag1">
 
@@ -33,14 +32,20 @@ $this->title = 'Formulario Actividades';
 		  <!-- Default panel contents -->
 		  <div class="panel-heading">Actividades</div>
 		  <div class="panel-body">
-			<!-- List group -->
-			<ul class="list-group">
-				<li class="list-group-item"><input type="radio" name="actividades"> Elaboración del procedimiento para identificar los requisitos legales de SST aplicables al Banco Santander y evaluar su cumplimiento</li>
-				<li class="list-group-item"><input type="radio" name="actividades"> Inspección instalaciones, extintores, luces de emergencia</li>
-				<li class="list-group-item"><input type="radio" name="actividades"> Evaluaciòn puestos de trabajo</li>
-				<li class="list-group-item"><input type="radio" name="actividades"> Análisis de vulnerabilidad e identificación de amenazas</li>
-				<li class="list-group-item"><input type="radio" name="actividades"> Capacitaciòn y entrenamiento de brigadas</li>
-			</ul>
+			<div class="form-group select-m">
+				<!-- <label class="control-label" for="compagoSelect">Año</label> -->
+				<div class="mad-select">
+					<ul>
+						<li data-value="1">Seleccionar</li>
+						<li data-value="2">Elaboración del procedimiento para identificar los requisitos legales de SST aplicables al Banco Santander y evaluar su cumplimiento</li>
+						<li data-value="3">Inspección instalaciones, extintores, luces de emergencia</li>
+						<li data-value="4">Evaluaciòn puestos de trabajo</li>
+						<li data-value="5">Análisis de vulnerabilidad e identificación de amenazas</li>
+						<li data-value="6">Capacitaciòn y entrenamiento de brigadas</li>
+					</ul>
+					<input type="hidden" id="compagoSelect" name="myOptions" value="1" class="form-control">
+				</div>
+			</div>
 		  </div>
 		</div>
 
@@ -49,10 +54,18 @@ $this->title = 'Formulario Actividades';
 		  <div class="panel-heading">Rutinario / No Rutinario</div>
 		  <div class="panel-body">
 			<!-- List group -->
-			<ul class="list-group">
-				<li class="list-group-item"><input type="radio" name="rutinario"> R</li>
-				<li class="list-group-item"><input type="radio" name="rutinario"> NR</li>
-			</ul>
+			<div class="radio radio-primary">
+			  <label>
+				<input type="radio" name="rutinario" id="optionsRadios1" value="option2">
+					R
+			  </label>
+			</div>
+			<div class="radio radio-primary">
+			  <label>
+				<input type="radio" name="rutinario" id="optionsRadios2" value="option2">
+					NR
+			  </label>
+			</div>
 		  </div>
 		</div>
 
@@ -110,114 +123,114 @@ $this->title = 'Formulario Actividades';
 		  <!-- Default panel contents -->
 		  <div class="panel-heading">Peligro</div>
 		  <div class="panel-body">
-			<!-- List group -->
-			<ul class="list-group">
-				<li class="list-group-item"><input type="radio" name="opcion"> Efectos Sistèmicos</li>
-				<li class="list-group-item"><input type="radio" name="opcion"> Efectos Letales o Mortales</li>
-				<li class="list-group-item"><input type="radio" name="opcion"> Efectos DIrectos(localizados)</li>
-				<li class="list-group-item"><input type="radio" name="opcion"> Irritaciòn en la piel</li>
-				<li class="list-group-item"><input type="radio" name="opcion"> Corrosiòn en la piel</li>
-				<li class="list-group-item"><input type="radio" name="opcion"> Transmisiòn de Infecciones Ocupacionales</li>
-				<li class="list-group-item"><input type="radio" name="opcion"> Inoculaciòn por pinchazo con aguja contaminada</li>
-				<li class="list-group-item"><input type="radio" name="opcion"> Perdida audicion</li>
-				<li class="list-group-item"><input type="radio" name="opcion"> perdida vision</li>
-			</ul>
+			<div class="form-group select-m">
+				<div class="mad-select">
+					<ul>
+						<li data-value="1">Seleccionar</li>
+						<li data-value="2">Efectos Sistémicos</li>
+						<li data-value="3">Efectos Letales o Mortales</li>
+						<li data-value="4">Efectos DIrectos(localizados)</li>
+						<li data-value="5">Irritaciòn en la piel</li>
+						<li data-value="6">Corrosiòn en la piel</li>
+						<li data-value="7">Transmisiòn de Infecciones Ocupacionales</li>
+						<li data-value="8">Inoculaciòn por pinchazo con aguja contaminada</li>
+						<li data-value="9">Perdida audicion</li>
+						<li data-value="10">perdida vision</li>
+					</ul>
+					<input type="hidden" id="compagoSelect" name="myOptions" value="1" class="form-control">
+				</div>
+			</div>
 		  </div>
 		</div>
 		
 		<div class="form-group text-right">
-			<button onclick="myFunction()" class="btn btn-actions btn-raised" href="#pag2" aria-controls="dos" role="tab" data-toggle="tab">Siguiente</button>
+			<button onclick="myFunction()" class="btn btn-actions btn-raised" href="#pag3" aria-controls="dos" role="tab" data-toggle="tab">Siguiente</button>
 		</div>
 
 	</div>
 <!-- Segunda pagina -->
-    <div role="tabpanel" class="tab-pane" id="pag2">
+    <div role="tabpanel" class="tab-pane" id="pag3">
 
 		<div class="panel panel-default">
 		  <!-- Default panel contents -->
 		  <div class="panel-heading">Riesgo</div>
 		  <div class="panel-body">
-			<!-- List group -->
-			<ul class="list-group">
-				<li class="list-group-item"><input type="radio" name="riesgo"> RUIDO</li>
-				<li class="list-group-item"><input type="radio" name="riesgo"> ILUMINACION</li>
-				<li class="list-group-item"><input type="radio" name="riesgo"> TEMPERATURA EXTREMA</li>
-				<li class="list-group-item"><input type="radio" name="riesgo"> RADIACION IONIZANTE</li>
-				<li class="list-group-item"><input type="radio" name="riesgo"> RADIACION NO IONIZANTE</li>
-				<li class="list-group-item"><input type="radio" name="riesgo"> BIOLOGICOS</li>
-				<li class="list-group-item"><input type="radio" name="riesgo"> DE SEGURIDAD</li>
-				<li class="list-group-item"><input type="radio" name="riesgo"> SANEAMIENTO BASICO</li>
-				<li class="list-group-item"><input type="radio" name="riesgo"> POLVOS Y HUMOS</li>
-				<li class="list-group-item"><input type="radio" name="riesgo"> QUIMICOS - METALES</li>
-				<li class="list-group-item"><input type="radio" name="riesgo"> SOLVENTES</li>
-				<li class="list-group-item"><input type="radio" name="riesgo"> SICOSOCIALES</li>
-				<li class="list-group-item"><input type="radio" name="riesgo"> ERGONOMICOS</li>
-				<li class="list-group-item"><input type="radio" name="riesgo"> OTRO RIESGO</li>
-				<li class="list-group-item"><input type="radio" name="riesgo"> VIBRACIÓN</li>
-				<li class="list-group-item"><input type="radio" name="riesgo"> HUMEDAD</li>
-				<li class="list-group-item"><input type="radio" name="riesgo"> PRESIONES EXTREMAS</li>
-				<li class="list-group-item"><input type="radio" name="riesgo"> VENTILACIÓN</li>
-				<li class="list-group-item"><input type="radio" name="riesgo"> HUMOS METÁLICOS</li>
-				<li class="list-group-item"><input type="radio" name="riesgo"> GASES</li>
-				<li class="list-group-item"><input type="radio" name="riesgo"> VAPORES</li>
-				<li class="list-group-item"><input type="radio" name="riesgo"> LÍQUIDOS</li>
-				<li class="list-group-item"><input type="radio" name="riesgo"> VIRUS</li>
-				<li class="list-group-item"><input type="radio" name="riesgo"> RICKETSIAS Y CLAMIDIAS</li>
-				<li class="list-group-item"><input type="radio" name="riesgo"> BACTERIAS</li>
-				<li class="list-group-item"><input type="radio" name="riesgo"> HONGOS</li>
-				<li class="list-group-item"><input type="radio" name="riesgo"> PARÁSITOS</li>
-				<li class="list-group-item"><input type="radio" name="riesgo"> INSECTOS</li>
-				<li class="list-group-item"><input type="radio" name="riesgo"> ROEDORES</li>
-				<li class="list-group-item"><input type="radio" name="riesgo"> NO SE ESPECIFICA</li>
-				<li class="list-group-item"><input type="radio" name="riesgo"> CONDICIONES DEL INDIVIDUO</li>
-				<li class="list-group-item"><input type="radio" name="riesgo"> CONDICIONES INTERNAS DEL TRABAJO</li>
-				<li class="list-group-item"><input type="radio" name="riesgo"> MONOTONÍA</li>
-				<li class="list-group-item"><input type="radio" name="riesgo"> ACOSO LABORAL</li>
-				<li class="list-group-item"><input type="radio" name="riesgo"> CARGA DE TRABAJO ESTÁTICA</li>
-				<li class="list-group-item"><input type="radio" name="riesgo"> CARGA DE TRABAJO DINÁMICA</li>
-				<li class="list-group-item"><input type="radio" name="riesgo"> DISEÑO DE PUESTO DE TRABAJO</li>
-				<li class="list-group-item"><input type="radio" name="riesgo"> TRABAJO CON VIDEO TERMINALES</li>
-				<li class="list-group-item"><input type="radio" name="riesgo"> SOBRECARGA Y ESFUERZOS</li>
-				<li class="list-group-item"><input type="radio" name="riesgo"> POSTURAS CRÍTICAS</li>
-				<li class="list-group-item"><input type="radio" name="riesgo"> INSTALACIONES LOCATIVAS DEFECTUOSAS</li>
-				<li class="list-group-item"><input type="radio" name="riesgo"> MECÁNICOS (CAÍDA, ATRAPAMIENTO, GOLPE, CORTADURA, QUEMADURA)</li>
-				<li class="list-group-item"><input type="radio" name="riesgo"> ELÉCTRICOS</li>
-				<li class="list-group-item"><input type="radio" name="riesgo"> FUENTES GENERADORAS DE INCENDIO Y EXPLOSIÓN</li>
-				<li class="list-group-item"><input type="radio" name="riesgo"> ORDEN Y ASEO</li>
-				<li class="list-group-item"><input type="radio" name="riesgo"> ALMACENAMIENTO</li>
-				<li class="list-group-item"><input type="radio" name="riesgo"> SEGURIDAD PERSONAL</li>
-				<li class="list-group-item"><input type="radio" name="riesgo"> MANEJO DE VEHÍCULOS</li>
-				<li class="list-group-item"><input type="radio" name="riesgo"> SERVICIOS SANITARIOS EN MAL ESTADO</li>
-				<li class="list-group-item"><input type="radio" name="riesgo"> DISPOSICIÓN DE BASURAS, DESECHOS Y RESIDUOS</li>
-				<li class="list-group-item"><input type="radio" name="riesgo"> AGUA POTABLE</li>
-				<li class="list-group-item"><input type="radio" name="riesgo"> ALCANTARILLADO</li>
-				<li class="list-group-item"><input type="radio" name="riesgo"> DISPOSICIÓN DE SUSTANCIAS TÓXICAS</li>
-				<li class="list-group-item"><input type="radio" name="riesgo"> ACTIVIDAD DEPORTIVA</li>
-				<li class="list-group-item"><input type="radio" name="riesgo"> Repetitivo:  2 veces/ min., mínimo 40 – 50% de la jornada laboral</li>
-				<li class="list-group-item"><input type="radio" name="riesgo"> Posición de la muñeca:  en algunos estudios no es considerado factor de riesgo, cuando se encuentra solo este factor.</li>
-				<li class="list-group-item"><input type="radio" name="riesgo"> Fuerza:  es un factor importante de acuerdo con la cantidad:  cuando se encuentra que el peso es > de 5 libras. </li>
-				<li class="list-group-item"><input type="radio" name="riesgo"> Vibración:  30 veces / segundo.</li>
-				<li class="list-group-item"><input type="radio" name="riesgo"> Estrés mecánico:  roce de muñeca.</li>
-				<li class="list-group-item"><input type="radio" name="riesgo"> Temperaturas extremas frías:  disminuye la conducción nerviosa.</li>
-				<li class="list-group-item"><input type="radio" name="riesgo"> Anatómicos</li>
-				<li class="list-group-item"><input type="radio" name="riesgo"> Endocrinos</li>
-				<li class="list-group-item"><input type="radio" name="riesgo"> Obesidad</li>
-				<li class="list-group-item"><input type="radio" name="riesgo"> Embarazo</li>
-				<li class="list-group-item"><input type="radio" name="riesgo"> Trauma de muñeca</li>
-				<li class="list-group-item"><input type="radio" name="riesgo"> Raza</li>
-				<li class="list-group-item"><input type="radio" name="riesgo"> Otras patologías metabólicas o inflamatorias</li>
-			</ul>
+			<div class="form-group select-m">
+				<div class="mad-select">
+					<ul>
+						<li data-value="1">Seleccionar</li>
+						<li data-value="2">RUIDO</li>
+						<li data-value="3">ILUMINACION</li>
+						<li data-value="4">TEMPERATURA EXTREMA</li>
+						<li data-value="5">RADIACION IONIZANTE</li>
+						<li data-value="6">RADIACION NO IONIZANTE</li>
+						<li data-value="7">BIOLOGICOS</li>
+						<li data-value="8">DE SEGURIDAD</li>
+						<li data-value="9">SANEAMIENTO BASICO</li>
+						<li data-value="10">POLVOS Y HUMOS</li>
+						<li data-value="11">QUIMICOS - METALES</li>
+						<li data-value="12">SOLVENTES</li>
+						<li data-value="13">SICOSOCIALES</li>
+						<li data-value="14">ERGONOMICOS</li>
+						<li data-value="15">OTRO RIESGO</li>
+						<li data-value="16">VIBRACIÓN</li>
+						<li data-value="17">HUMEDAD</li>
+						<li data-value="18">PRESIONES EXTREMAS</li>
+						<li data-value="19">VENTILACIÓN</li>
+						<li data-value="20">HUMOS METÁLICOS</li>
+						<li data-value="21">GASES</li>
+						<li data-value="22">VAPORES</li>
+						<li data-value="23">LÍQUIDOS</li>
+						<li data-value="24">VIRUS</li>
+						<li data-value="25">RICKETSIAS Y CLAMIDIAS</li>
+						<li data-value="26">BACTERIAS</li>
+						<li data-value="27">HONGOS</li>
+						<li data-value="28">PARÁSITOS</li>
+						<li data-value="29">ROEDORES</li>
+						<li data-value="30">INSECTOS</li>
+						<li data-value="31">NO SE ESPECIFICA</li>
+						<li data-value="32">CONDICIONES DEL INDIVIDUO</li>
+						<li data-value="33">CONDICIONES INTERNAS DEL TRABAJO</li>
+						<li data-value="34">MONOTONÍA</li>
+						<li data-value="35">ACOSO LABORAL</li>
+						<li data-value="36">CARGA DE TRABAJO ESTÁTICA</li>
+						<li data-value="37">CARGA DE TRABAJO DINÁMICA</li>
+						<li data-value="38">DISEÑO DE PUESTO DE TRABAJO</li>
+						<li data-value="39">TRABAJO CON VIDEO TERMINALES</li>
+						<li data-value="40">SOBRECARGA Y ESFUERZOS</li>
+						<li data-value="41">POSTURAS CRÍTICAS</li>
+						<li data-value="42">INSTALACIONES LOCATIVAS DEFECTUOSAS</li>
+						<li data-value="43">MECÁNICOS (CAÍDA, ATRAPAMIENTO, GOLPE, CORTADURA, QUEMADURA)</li>
+						<li data-value="44">ELÉCTRICOS</li>
+						<li data-value="45">FUENTES GENERADORAS DE INCENDIO Y EXPLOSIÓN</li>
+						<li data-value="46">ORDEN Y ASEO</li>
+						<li data-value="47">ALMACENAMIENTO</li>
+						<li data-value="48">SEGURIDAD PERSONAL</li>
+						<li data-value="49">MANEJO DE VEHÍCULOS</li>
+						<li data-value="50">SERVICIOS SANITARIOS EN MAL ESTADO</li>
+						<li data-value="51">DISPOSICIÓN DE BASURAS, DESECHOS Y RESIDUOS</li>
+						<li data-value="52">AGUA POTABLE</li>
+						<li data-value="53">ALCANTARILLADO</li>
+						<li data-value="54">DISPOSICIÓN DE SUSTANCIAS TÓXICAS</li>
+						<li data-value="55">ACTIVIDAD DEPORTIVA</li>
+						<li data-value="56">Repetitivo:  2 veces/ min., mínimo 40 – 50% de la jornada laboral</li>
+						<li data-value="57">Posición de la muñeca:  en algunos estudios no es considerado factor de riesgo, cuando se encuentra solo este factor.</li>
+						<li data-value="58">Fuerza:  es un factor importante de acuerdo con la cantidad:  cuando se encuentra que el peso es > de 5 libras.</li>
+						<li data-value="59">Vibración:  30 veces / segundo.</li>
+						<li data-value="60">Estrés mecánico:  roce de muñeca.</li>
+						<li data-value="61">Temperaturas extremas frías:  disminuye la conducción nerviosa.</li>
+						<li data-value="62">Anatómicos</li>
+						<li data-value="63">Endocrinos</li>
+						<li data-value="64">Obesidad</li>
+						<li data-value="65">Trauma de muñeca</li>
+						<li data-value="66">Raza</li>
+						<li data-value="67">Otras patologías metabólicas o inflamatorias</li>
+					</ul>
+					<input type="hidden" id="compagoSelect" name="myOptions" value="1" class="form-control">
+				</div>
+			</div>
 		  </div>
 		</div>
-		
-		<div class="form-group text-center">
-			<button onclick="myFunction()" class="btn btn-actions btn-raised" href="#pag1" aria-controls="dos" role="tab" data-toggle="tab">Anterior</button>
-			<button onclick="myFunction()" class="btn btn-actions btn-raised" href="#pag3" aria-controls="dos" role="tab" data-toggle="tab">Siguiente</button>
-		</div>
-		
-    </div>
-<!-- Tercera pagina -->
-    <div role="tabpanel" class="tab-pane" id="pag3">
 
 		<div class="panel panel-default">
 		  <!-- Default panel contents -->
@@ -253,13 +266,30 @@ $this->title = 'Formulario Actividades';
 		  <!-- Default panel contents -->
 		  <div class="panel-heading">Indice de procedimientos existentes</div>
 		  <div class="panel-body">
-			<!-- List group -->
-			<ul class="list-group">
-				<li class="list-group-item"><input type="radio"> No aplica</li>
-				<li class="list-group-item"><input type="radio"> Existen son satisfactorios y suficientes</li>
-				<li class="list-group-item"><input type="radio"> Existen parcialmente y no son satisfactorios ò suficientes</li>
-				<li class="list-group-item"><input type="radio"> No existen</li>
-			</ul>
+			<div class="radio radio-primary">
+			  <label>
+				<input type="radio" name="rutinario2" id="optionsRadios1" value="option2">
+					No aplica
+			  </label>
+			</div>
+			<div class="radio radio-primary">
+			  <label>
+				<input type="radio" name="rutinario2" id="optionsRadios2" value="option2">
+					Existen son satisfactorios y suficientes
+			  </label>
+			</div>
+			<div class="radio radio-primary">
+			  <label>
+				<input type="radio" name="rutinario" id="optionsRadios3" value="option2">
+					Existen parcialmente y no son satisfactorios ò suficientes
+			  </label>
+			</div>
+			<div class="radio radio-primary">
+			  <label>
+				<input type="radio" name="rutinario2" id="optionsRadios4" value="option2">
+					No existen
+			  </label>
+			</div>
 		  </div>
 		</div>
 
@@ -267,13 +297,30 @@ $this->title = 'Formulario Actividades';
 		  <!-- Default panel contents -->
 		  <div class="panel-heading">Indice de capacitación</div>
 		  <div class="panel-body">
-			<!-- List group -->
-			<ul class="list-group">
-				<li class="list-group-item"><input type="radio"> No aplica</li>
-				<li class="list-group-item"><input type="radio"> Personal entrenado. Conoce el peligro y lo previene</li>
-				<li class="list-group-item"><input type="radio"> Personal parcialmente entrenado, conoce el peligro pero no toma acciones de control</li>
-				<li class="list-group-item"><input type="radio"> Personal no entrenado, no conoce el peligro,no toma acciones de control</li>
-			</ul>
+			<div class="radio radio-primary">
+			  <label>
+				<input type="radio" name="rutinario3" id="optionsRadios1" value="option2">
+					No aplica
+			  </label>
+			</div>
+			<div class="radio radio-primary">
+			  <label>
+				<input type="radio" name="rutinario3" id="optionsRadios2" value="option2">
+					Personal entrenado. Conoce el peligro y lo previene
+			  </label>
+			</div>
+			<div class="radio radio-primary">
+			  <label>
+				<input type="radio" name="rutinario3" id="optionsRadios3" value="option2">
+					Personal parcialmente entrenado, conoce el peligro pero no toma acciones de control
+			  </label>
+			</div>
+			<div class="radio radio-primary">
+			  <label>
+				<input type="radio" name="rutinario3" id="optionsRadios4" value="option2">
+					Personal no entrenado, no conoce el peligro,no toma acciones de control
+			  </label>
+			</div>
 		  </div>
 		</div>
 
@@ -281,20 +328,29 @@ $this->title = 'Formulario Actividades';
 		  <!-- Default panel contents -->
 		  <div class="panel-heading">Indice de Exposición al Peligro</div>
 		  <div class="panel-body">
-			<!-- List group -->
-			<ul class="list-group">
-				<li class="list-group-item"><input type="radio" name="deposito" value="1">
-				"- Al menos una vez al año. <br>
-				- Esporadicamente. <br>
-				- Alguna vez en su jornada laboral y con periodo corto de tiempo."</li>
-				<li class="list-group-item"><input type="radio" name="deposito" value="2">
-				"- Al menos una sola vez al mes. <br>
-				- Eventualmente. <br>
-				- Varias veces en su jornada laboral,aunque sea con tiempos cortos."</li>
-				<li class="list-group-item"><input type="radio" name="deposito" value="3">
-				"* Al menos una vez al dia. <br>
-				* Permanentemente, continuamente o varias veces en su jornada laboral con tiempo prolongado."</li>
-			</ul>
+			<div class="radio radio-primary">
+			  <label>
+				<input type="radio" name="rutinario4" id="optionsRadios1" value="option2">
+					"- Al menos una vez al año. <br>
+					- Esporadicamente. <br>
+					- Alguna vez en su jornada laboral y con periodo corto de tiempo."
+			  </label>
+			</div>
+			<div class="radio radio-primary">
+			  <label>
+				<input type="radio" name="rutinario4" id="optionsRadios2" value="option2">
+					"- Al menos una sola vez al mes. <br>
+					- Eventualmente. <br>
+					- Varias veces en su jornada laboral,aunque sea con tiempos cortos."
+			  </label>
+			</div>
+			<div class="radio radio-primary">
+			  <label>
+				<input type="radio" name="rutinario4" id="optionsRadios3" value="option2">
+					"* Al menos una vez al dia. <br>
+					* Permanentemente, continuamente o varias veces en su jornada laboral con tiempo prolongado."
+			  </label>
+			</div>
 		  </div>
 		</div>
 
@@ -354,15 +410,27 @@ $this->title = 'Formulario Actividades';
 		  <!-- Default panel contents -->
 		  <div class="panel-heading">Riesgo Puro</div>
 		  <div class="panel-body">
-			<!-- List group -->
-			<ul class="list-group">
-				<li class="list-group-item"><input type="radio"> <strong>Ligeramente dañino:</strong> "- Lesión sin incapacidad: pequeños cortes o magulladuras, irritación de ojos por polvo. <br>
-				&nbsp;&nbsp; - Molestias e incomodidad: dolor de cabeza."</li>
-				<li class="list-group-item"><input type="radio"> <strong>Dañino:</strong> "- Lesión con incapacidad temporal: fracturas menores. <br>
-				&nbsp;&nbsp; - Daños a la salud reversible: sordera, dermatitis, asma, trastornos, músculo-esqueléticos"</li>
-				<li class="list-group-item"><input type="radio"> <strong>Extremadamente dañino:</strong> "Lesión con incapacidad permanente: amputaciones, fracturas mayores. Muerte. <br>
-				&nbsp;&nbsp; - Daño a la salud irreversible: intoxicaciones, lesiones múltiples, lesiones fatales."</li>
-			</ul>
+			<div class="radio radio-primary">
+			  <label>
+				<input type="radio" name="rutinario5" id="optionsRadios1" value="option2">
+					<strong>Ligeramente dañino:</strong> "- Lesión sin incapacidad: pequeños cortes o magulladuras, irritación de ojos por polvo. <br>
+					&nbsp;&nbsp; - Molestias e incomodidad: dolor de cabeza."
+			  </label>
+			</div>
+			<div class="radio radio-primary">
+			  <label>
+				<input type="radio" name="rutinario5" id="optionsRadios2" value="option2">
+					 <strong>Dañino:</strong> "- Lesión con incapacidad temporal: fracturas menores. <br>
+					&nbsp;&nbsp; - Daños a la salud reversible: sordera, dermatitis, asma, trastornos, músculo-esqueléticos"
+			  </label>
+			</div>
+			<div class="radio radio-primary">
+			  <label>
+				<input type="radio" name="rutinario5" id="optionsRadios3" value="option2">
+					 <strong>Extremadamente dañino:</strong> "Lesión con incapacidad permanente: amputaciones, fracturas mayores. Muerte. <br>
+					&nbsp;&nbsp; - Daño a la salud irreversible: intoxicaciones, lesiones múltiples, lesiones fatales."
+			  </label>
+			</div>
 		  </div>
 		</div>
 
@@ -481,13 +549,30 @@ $this->title = 'Formulario Actividades';
 		  <!-- Default panel contents -->
 		  <div class="panel-heading">Indice de procedimientos existentes</div>
 		  <div class="panel-body">
-			<!-- List group -->
-			<ul class="list-group">
-				<li class="list-group-item"><input type="radio"> No aplica</li>
-				<li class="list-group-item"><input type="radio"> Existen son satisfactorios y suficientes</li>
-				<li class="list-group-item"><input type="radio"> Existen parcialmente y no son satisfactorios ò suficientes</li>
-				<li class="list-group-item"><input type="radio"> No existen</li>
-			</ul>
+			<div class="radio radio-primary">
+			  <label>
+				<input type="radio" name="rutinario6" id="optionsRadios1" value="option2">
+					No aplica
+			  </label>
+			</div>
+			<div class="radio radio-primary">
+			  <label>
+				<input type="radio" name="rutinario6" id="optionsRadios2" value="option2">
+					Existen son satisfactorios y suficientes
+			  </label>
+			</div>
+			<div class="radio radio-primary">
+			  <label>
+				<input type="radio" name="rutinario6" id="optionsRadios3" value="option2">
+					Existen parcialmente y no son satisfactorios ò suficientes
+			  </label>
+			</div>
+			<div class="radio radio-primary">
+			  <label>
+				<input type="radio" name="rutinario6" id="optionsRadios4" value="option2">
+					No existen
+			  </label>
+			</div>
 		  </div>
 		</div>
 
@@ -495,13 +580,30 @@ $this->title = 'Formulario Actividades';
 		  <!-- Default panel contents -->
 		  <div class="panel-heading">Indice de capacitación</div>
 		  <div class="panel-body">
-			<!-- List group -->
-			<ul class="list-group">
-				<li class="list-group-item"><input type="radio"> No aplica</li>
-				<li class="list-group-item"><input type="radio"> Personal entrenado. Conoce el peligro y lo previene</li>
-				<li class="list-group-item"><input type="radio"> Personal parcialmente entrenado, conoce el peligro pero no toma acciones de control</li>
-				<li class="list-group-item"><input type="radio"> Personal no entrenado, no conoce el peligro,no toma acciones de control</li>
-			</ul>
+			<div class="radio radio-primary">
+			  <label>
+				<input type="radio" name="rutinario7" id="optionsRadios1" value="option2">
+					No aplica
+			  </label>
+			</div>
+			<div class="radio radio-primary">
+			  <label>
+				<input type="radio" name="rutinario7" id="optionsRadios2" value="option2">
+					Personal entrenado. Conoce el peligro y lo previene
+			  </label>
+			</div>
+			<div class="radio radio-primary">
+			  <label>
+				<input type="radio" name="rutinario7" id="optionsRadios3" value="option2">
+					Personal parcialmente entrenado, conoce el peligro pero no toma acciones de control
+			  </label>
+			</div>
+			<div class="radio radio-primary">
+			  <label>
+				<input type="radio" name="rutinario7" id="optionsRadios4" value="option2">
+					Personal no entrenado, no conoce el peligro,no toma acciones de control
+			  </label>
+			</div>
 		  </div>
 		</div>
 		
@@ -518,20 +620,29 @@ $this->title = 'Formulario Actividades';
 		  <!-- Default panel contents -->
 		  <div class="panel-heading">Indice de Exposición al Peligro</div>
 		  <div class="panel-body">
-			<!-- List group -->
-			<ul class="list-group">
-				<li class="list-group-item"><input type="radio" name="deposito" value="1">
-				"- Al menos una vez al año. <br>
+			<div class="radio radio-primary">
+			  <label>
+				<input type="radio" name="rutinario8" id="optionsRadios1" value="option2">
+					"- Al menos una vez al año. <br>
 				- Esporadicamente. <br>
-				- Alguna vez en su jornada laboral y con periodo corto de tiempo."</li>
-				<li class="list-group-item"><input type="radio" name="deposito" value="2">
-				"- Al menos una sola vez al mes. <br>
+				- Alguna vez en su jornada laboral y con periodo corto de tiempo."
+			  </label>
+			</div>
+			<div class="radio radio-primary">
+			  <label>
+				<input type="radio" name="rutinario8" id="optionsRadios2" value="option2">
+					"- Al menos una sola vez al mes. <br>
 				- Eventualmente. <br>
-				- Varias veces en su jornada laboral,aunque sea con tiempos cortos."</li>
-				<li class="list-group-item"><input type="radio" name="deposito" value="3">
-				"* Al menos una vez al dia. <br>
-				* Permanentemente, continuamente o varias veces en su jornada laboral con tiempo prolongado."</li>
-			</ul>
+				- Varias veces en su jornada laboral,aunque sea con tiempos cortos."
+			  </label>
+			</div>
+			<div class="radio radio-primary">
+			  <label>
+				<input type="radio" name="rutinario8" id="optionsRadios3" value="option2">
+					"* Al menos una vez al dia. <br>
+				* Permanentemente, continuamente o varias veces en su jornada laboral con tiempo prolongado."
+			  </label>
+			</div>
 		  </div>
 		</div>
 
@@ -580,17 +691,39 @@ $this->title = 'Formulario Actividades';
 		  <!-- Default panel contents -->
 		  <div class="panel-heading">Riesgo Residual</div>
 		  <div class="panel-body">
-			<!-- List group -->
-			<ul class="list-group">
-				<li class="list-group-item"><input type="radio"> <strong>Intolerable (IT):</strong> "No se debe comenzar ni continuar el trabajo hasta que se reduzca el riesgo. Si no es posible reducir el riesgo, incluso con recursos ilimitados, debe prohibirse el trabajo."</li>
-				<li class="list-group-item"><input type="radio"> <strong>Importante (IM):</strong> "No debe comenzarse en el trabajo hasta que se haya reducido el riesgo. Puede que se precisen recursos considerables para controlar el riesgo. Cuando el riesgo corresponda a un trabajo que se ésta realizando, debe remediarse el problema en un tiempo inferior al de los riesgos moderados."</li>
-				<li class="list-group-item"><input type="radio"> <strong>Moderado (M):</strong> "Se deben hacer esfuerzos para reducir el riesgo, determinando las inversiones precisas. Las medidas para reducir el riesgo deben implantarse en un periodo determinado.	<br>
-				&nbsp;&nbsp; - Cuando el riesgo moderado está asociado con consecuencias extremadamente dañinas (mortal o muy graves), se precisará una acción posterior para establecer, con más precisión, la probabilidad de daño como base para determinar la necesidad de mejora de las medidas de control.	"</li>
-				<li class="list-group-item"><input type="radio"> <strong>Aceptable (TO):</strong> "No se necesita mejorar la acción preventiva.	<br>
+			<div class="radio radio-primary">
+			  <label>
+				<input type="radio" name="rutinario9" id="optionsRadios1" value="option2">
+					<strong>Intolerable (IT):</strong> "No se debe comenzar ni continuar el trabajo hasta que se reduzca el riesgo. Si no es posible reducir el riesgo, incluso con recursos ilimitados, debe prohibirse el trabajo."
+			  </label>
+			</div>
+			<div class="radio radio-primary">
+			  <label>
+				<input type="radio" name="rutinario9" id="optionsRadios2" value="option2">
+					<strong>Importante (IM):</strong> "No debe comenzarse en el trabajo hasta que se haya reducido el riesgo. Puede que se precisen recursos considerables para controlar el riesgo. Cuando el riesgo corresponda a un trabajo que se ésta realizando, debe remediarse el problema en un tiempo inferior al de los riesgos moderados."
+			  </label>
+			</div>
+			<div class="radio radio-primary">
+			  <label>
+				<input type="radio" name="rutinario9" id="optionsRadios3" value="option2">
+					<strong>Moderado (M):</strong> "Se deben hacer esfuerzos para reducir el riesgo, determinando las inversiones precisas. Las medidas para reducir el riesgo deben implantarse en un periodo determinado.	<br>
+				&nbsp;&nbsp; - Cuando el riesgo moderado está asociado con consecuencias extremadamente dañinas (mortal o muy graves), se precisará una acción posterior para establecer, con más precisión, la probabilidad de daño como base para determinar la necesidad de mejora de las medidas de control.	"
+			  </label>
+			</div>
+			<div class="radio radio-primary">
+			  <label>
+				<input type="radio" name="rutinario9" id="optionsRadios4" value="option2">
+					<strong>Aceptable (TO):</strong> "No se necesita mejorar la acción preventiva.	<br>
 				&nbsp;&nbsp; - Sin embargo se deben considerar soluciones rentables o mejoras que no supongan una carga económica importante. <br>
-				&nbsp;&nbsp; - Se requieren comprobaciones periódicas para asegurar que se mantiene la eficacia de las medidas de control."</li>
-				<li class="list-group-item"><input type="radio"> <strong>Trivial (T):</strong> "No se necesita adoptar ninguna acción."</li>
-			</ul>
+				&nbsp;&nbsp; - Se requieren comprobaciones periódicas para asegurar que se mantiene la eficacia de las medidas de control."
+			  </label>
+			</div>
+			<div class="radio radio-primary">
+			  <label>
+				<input type="radio" name="rutinario9" id="optionsRadios5" value="option2">
+					<strong>Trivial (T):</strong> "No se necesita adoptar ninguna acción."
+			  </label>
+			</div>
 		  </div>
 		</div>
 		
